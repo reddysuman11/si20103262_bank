@@ -51,9 +51,9 @@ public class AccountTrackerController {
 	        @ApiResponse(code = 404, message = "The resource you were trying to reach is not found")
 	})
 	@PostMapping(path = "/createCustomerAccount")
-	public ResponseEntity<Account> craeteCustomerAccount(@RequestBody Account account) {
+	public ResponseEntity<Account> createCustomerAccount(@RequestBody Account account) {
 		LOGGER.info("craeteCustomerAccount() of AccountTrackerController :: {}", account);
-		return new ResponseEntity<>(customerAccountService.craeteAccount(account), HttpStatus.CREATED);
+		return new ResponseEntity<>(customerAccountService.createAccount(account), HttpStatus.CREATED);
 	}
 
 	/**

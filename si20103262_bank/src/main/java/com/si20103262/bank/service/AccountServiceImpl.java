@@ -33,7 +33,7 @@ public class AccountServiceImpl implements AccountService {
 	private AccountTrackerRepository customerAccountTrackerRepository;
 		
 	@Override
-	public Account craeteAccount(Account customer) {
+	public Account createAccount(Account customer) {
 		
 		LOGGER.info("craeteCustomerAccount() of CustomerAccountServiceImpl :: {} ", customer);
 		

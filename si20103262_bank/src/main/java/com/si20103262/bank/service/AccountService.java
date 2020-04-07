@@ -13,7 +13,7 @@ import com.si20103262.bank.model.TransferBalanceRequest;
  */
 public interface AccountService {
 
-	public Account craeteAccount(Account customer);
+	public Account createAccount(Account customer);
 	
 	public List<Account> getAllCustomers();
 	public Account getCustomerById(Long id);
